@@ -1,0 +1,7 @@
+> Copyright 2019-2020 Hewlett Packard Enterprise Development LP
+
+# HMS Pytest/Tavern Test Image for CT Framework
+
+In some cases, post-deploy testing within the CT framework may require tools that are not included as part of the base installation of the NCN such as Pytest, Tavern, or Robot. In such cases, the required tools should be packaged in a Docker image. For more information, see [Functional and Integration Test Guidelines](https://connect.us.cray.com/confluence/display/DST/Functional+and+Integration+Test+Guidelines).
+
+This repository is a fork of DST's [example-harness-image](https://stash.us.cray.com/projects/DST-EXAMPLES/repos/example-harness-image/browse) repository which packages Pytest along with the Tavern API testing plugin in a Docker image for use within the CT framework. This HMS fork of the repository hardcodes specific versions of Pytest (4.5.0) and Tavern (0.34.0) that are known to work together since more recent versions of Pytest are not yet supported by Tavern -- see [Fix for new pytest version](https://github.com/taverntesting/tavern/issues/367) and the [Tavern 1.0 release](https://github.com/taverntesting/tavern/issues/495). The Docker image is used by a wrapper script called [hms-pytest](https://stash.us.cray.com/projects/HMS/repos/hms-install/browse/cmd/hms-pytest) that comes from the commands directory of the [hms-install](https://stash.us.cray.com/projects/HMS/repos/hms-install/browse) repository. On the NCN, the command `hms-pytest` behaves like Pytest except that execution occurs within a test container.
