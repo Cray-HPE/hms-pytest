@@ -1,4 +1,4 @@
-# Copyright 2019-2020 Hewlett Packard Enterprise Development LP
+# Copyright 2019-2021 Hewlett Packard Enterprise Development LP
 
 FROM dtr.dev.cray.com/baseos/alpine:3.12
 
@@ -12,7 +12,7 @@ RUN set -ex \
 RUN pip3 install --upgrade \
     pip \
     pytest==6.1.2 \
-    tavern==1.11.1 \
+    tavern==1.12.2 \
     pytest-tap
 
 CMD ["/bin/bash"]
