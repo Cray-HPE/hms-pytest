@@ -1,5 +1,3 @@
-> Copyright 2019-2021 Hewlett Packard Enterprise Development LP
-
 # HMS Pytest/Tavern Test Image for CT Framework
 
 In some cases, post-deploy testing within the CT framework may require tools that are not included as part of the base installation of the NCN such as Pytest, Tavern, or Robot. In such cases, the required tools should be packaged in a Docker image. For more information, see [Functional and Integration Test Guidelines](https://connect.us.cray.com/confluence/display/DST/Functional+and+Integration+Test+Guidelines).
