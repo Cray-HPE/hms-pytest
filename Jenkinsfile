@@ -1,7 +1,7 @@
 @Library("dst-shared") _
 
 dockerBuildPipeline {
-        githubPushRepo = "Cray-HPE/hms-pytest"
+    githubPushRepo = "Cray-HPE/hms-pytest"
     product = "shasta-premium,shasta-standard"
     repository = "cray"
     imagePrefix = "hms"
