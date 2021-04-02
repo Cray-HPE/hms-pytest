@@ -24,6 +24,12 @@ Removed - for now removed features
 Security - in case of vulnerabilities
 -->
 
+## [1.5.0] - 2021-04-02
+
+### Changed
+
+- CASMHMS-4644 - Updated base image to alpine:3.13 and to be pulled from Artifactory instead of DTR.
+
 ## [1.4.0] - 2021-01-19
 
 ### Changed
