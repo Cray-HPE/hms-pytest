@@ -28,7 +28,8 @@ Security - in case of vulnerabilities
 
 ### Changed
 
-- CASMHMS-4644 - Updated base image to alpine:3.13 and to be pulled from Artifactory instead of DTR.
+- Updated base image to alpine:3.13 and to be pulled from Artifactory instead of DTR.
+- Updated Jenkinsfile product to "csm" from "shasta-premium,shasta-standard".
 
 ## [1.4.0] - 2021-01-19
 
