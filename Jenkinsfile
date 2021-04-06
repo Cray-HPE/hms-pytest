@@ -2,7 +2,7 @@
 
 dockerBuildPipeline {
     githubPushRepo = "Cray-HPE/hms-pytest"
-    product = "shasta-premium,shasta-standard"
+    product = "csm"
     repository = "cray"
     imagePrefix = "hms"
     app = "pytest"
