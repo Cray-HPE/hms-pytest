@@ -24,6 +24,13 @@ Removed - for now removed features
 Security - in case of vulnerabilities
 -->
 
+## [1.5.0] - 2021-04-02
+
+### Changed
+
+- Updated base image to alpine:3.13 and to be pulled from Artifactory instead of DTR.
+- Updated Jenkinsfile product to "csm" from "shasta-premium,shasta-standard".
+
 ## [1.4.0] - 2021-01-19
 
 ### Changed
