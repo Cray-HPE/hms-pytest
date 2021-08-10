@@ -24,7 +24,7 @@ FROM arti.dev.cray.com/baseos-docker-master-local/alpine:3.13
 
 # Install the necessary packages.
 RUN set -ex \
-    && apk update \
+    && apk -U upgrade \
     && apk add --no-cache \
         python3 \
         py3-pip

@@ -24,6 +24,12 @@ Removed - for now removed features
 Security - in case of vulnerabilities
 -->
 
+## [1.6.1] - 2021-08-10
+
+### Added
+
+- Added GitHub configuration files and fixed snyk warning.
+
 ## [1.6.0] - 2021-07-21
 
 ### Added
