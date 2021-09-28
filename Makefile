@@ -24,5 +24,5 @@ VERSION ?= $(shell cat .version)
 all: image
 
 image:
-	docker build --pull ${DOCKER_ARGS} --tag '${NAME}:${VERSION}' .
+	docker build ${NO_CACHE} --pull ${DOCKER_ARGS} --tag '${NAME}:${VERSION}' .
 
