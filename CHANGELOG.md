@@ -24,6 +24,12 @@ Removed - for now removed features
 Security - in case of vulnerabilities
 -->
 
+## [2.0.0] - 2021-09-30
+
+### Changed
+
+- Changed the docker image to run as the user nobody
+
 ## [1.6.1] - 2021-08-10
 
 ### Added

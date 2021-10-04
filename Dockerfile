@@ -35,4 +35,7 @@ RUN pip3 install --upgrade \
     tavern==1.12.2 \
     pytest-tap
 
+# nobody 65534:65534
+USER 65534:65534
+
 CMD ["/bin/bash"]
