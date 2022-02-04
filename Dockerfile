@@ -39,5 +39,3 @@ RUN pip3 install --upgrade \
 
 # nobody 65534:65534
 USER 65534:65534
-
-CMD ["/bin/bash"]
