@@ -1,6 +1,6 @@
 # MIT License
 
-# (C) Copyright [2019-2021] Hewlett Packard Enterprise Development LP
+# (C) Copyright [2019-2022] Hewlett Packard Enterprise Development LP
 
 # Permission is hereby granted, free of charge, to any person obtaining a
 # copy of this software and associated documentation files (the "Software"),
@@ -20,7 +20,9 @@
 # ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 # OTHER DEALINGS IN THE SOFTWARE.
 
-FROM arti.dev.cray.com/baseos-docker-master-local/alpine:3.13
+FROM artifactory.algol60.net/docker.io/alpine:3.15
+LABEL maintainer="Hewlett Packard Enterprise"
+STOPSIGNAL SIGTERM
 
 # Install the necessary packages.
 RUN set -ex \
@@ -37,5 +39,3 @@ RUN pip3 install --upgrade \
 
 # nobody 65534:65534
 USER 65534:65534
-
-CMD ["/bin/bash"]

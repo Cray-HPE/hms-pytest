@@ -1,0 +1,6 @@
+add_exclude:
+  - ".license_check.yaml"
+  - ".github/*"
+  - "Makefile"
+  - ".version"
+  - "CHANGELOG.md"
